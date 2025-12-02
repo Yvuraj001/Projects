@@ -1,0 +1,149 @@
+body {
+    /* background-image: linear-gradient(106deg, #5c5c5c, #757575); */
+    background-image: linear-gradient(278deg, #ffdefdd6, #000000a8);
+      
+}
+
+.head-title {
+    color: #cdc4ff;
+}
+
+.cast-info {
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #6e5384;
+    margin-top: 14px;
+    background: #5a5757;
+    border-radius: 12px;
+}
+
+.cast-title {
+    font-size: 24px;
+    color: var(--accent-gold);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+ 
+
+.cast-title::after {
+    content: "Cast Info  ~";
+    font-size: 25px;
+    color: var(--accent-gold);
+}
+
+.cast-container {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 13px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cast-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cast-name {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: MONOSPACE;
+    font-style: italic;
+}
+
+.cast-member img {
+    border-radius: 13px;
+}
+
+.also {
+    margin-left: 0;
+        padding: 10px !important;
+    
+}
+.also input{
+    padding: 10px !important;
+}
+
+.provider-container {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+.provider-name{
+        word-break: break-word;
+    text-align: center;
+}
+
+.provider-item img {
+    height: 100px;
+    object-fit: contain;
+    border-radius: 10px;
+
+}
+
+.provider-item {
+
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-break: break-word;
+    border: 2px solid #aaaa1b40;
+    padding: 5px;
+}
+
+.cast-title {
+       font-size: 24px;
+    color: var(--accent-gold);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 14px;
+    padding: 5px;
+}
+
+.providers {
+    background-color: #5a5757;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.amar {
+    margin: 5px;
+}
+
+
+.amar::after {
+    content: "  Provider  ~";
+    font-size: 25px;
+    color: var(--accent-gold);
+}
+  .click-details-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 53%;
+ 
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 0 10px;
+    z-index: 1000;
+}
+
+.click-details-nav img {
+    cursor: pointer;
+}
+ 
+.head-cont{
+        display: flex;
+    justify-content: space-around;  
+    align-items: center;
+    gap: 32vw;
+}

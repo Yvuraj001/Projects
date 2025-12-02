@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBase - Info Of Your Favourite Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utlities.css">
+    <link rel="stylesheet" href="special.css">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+</head>
+
+<body>
+    <div class="head-cont"> 
+ 
+        
+        <div class="head-title he2"><img src="./images/logo.svg" alt=""></div>
+    </div>
+    <div class="searchbar2">
+        <div class="cont procont">
+            <div class="input__container2">
+                <div class="shadow__input"></div>
+                <input type="text" class="input__search" placeholder="Search movies..." id="searchInput">
+                <button class="input__button__shadow" id="searchBtn">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.35-4.35"></path>
+                    </svg>
+                </button>
+            </div>
+
+
+
+        </div>
+    </div>
+
+    <div id="searchdata">
+
+    </div>
+    <div class="searchnav pagenav">
+        <button class="previous"> <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon"
+                role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16"
+                stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z">
+                </path>
+            </svg></button>
+
+        <button class="next"> <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon"
+                role="img" aria-hidden="true" class="Svg-sc-ytk21e-0 cAMMLk IYDlXmBmmUKHveMzIPCF" viewBox="0 0 16 16">
+                <path
+                    d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"
+                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                </path>
+            </svg></button>
+    </div>
+
+    <div id="cd">
+
+
+    </div>
+    <script type="module" src="click.js"></script>
+    <script type="module" src="search.js"></script>
+    <script type="module" src="functions.js"></script>
+</body>
+
+</html>

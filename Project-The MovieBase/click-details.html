@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBase - Info Of Your Favourite Movies</title>
+      <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utlities.css">
+    <link rel="stylesheet" href="special.css">
+    <link rel="stylesheet" href="extra.css">
+   <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+</head>
+<body>
+    <!-- Loading overlay shown while details load -->
+    <div id="loader-overlay" class="loader-overlay" aria-hidden="false">
+        <div class="loader" role="status" aria-label="Loading"></div>
+    </div>
+       <nav>    
+ 
+        <div class="searchbar">
+              <div class="head-title"><img src="./images/logo.svg" alt=""></div>
+            <div class="cont">
+                <div class="input__container also">
+
+                    <input type="text" class="input__search" placeholder="Search movies..." id="searchInput">
+                    <button class="input__button__shadow" id="searchBtn1">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+
+
+
+            </div>
+        </div>
+        
+</nav>
+    <div class="container">
+        <div id="clickmoviedetails">
+            
+        </div>
+    </div>
+
+    <script type="module" src="functions.js"></script>
+    <script type="module" src="click-details.js"></script>
+    
+</body>
+</html>

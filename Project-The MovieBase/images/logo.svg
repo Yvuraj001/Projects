@@ -1,0 +1,30 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Film strip icon on the left -->
+  <g transform="translate(10, 20)">
+    <!-- Film strip -->
+    <rect x="0" y="0" width="40" height="40" rx="4" fill="#FF6B6B" stroke="#000" stroke-width="2"/>
+    <rect x="3" y="3" width="34" height="34" fill="#1a1a1a"/>
+    
+    <!-- Film holes -->
+    <circle cx="6" cy="8" r="2" fill="#FF6B6B"/>
+    <circle cx="34" cy="8" r="2" fill="#FF6B6B"/>
+    <circle cx="6" cy="20" r="2" fill="#FF6B6B"/>
+    <circle cx="34" cy="20" r="2" fill="#FF6B6B"/>
+    <circle cx="6" cy="32" r="2" fill="#FF6B6B"/>
+    <circle cx="34" cy="32" r="2" fill="#FF6B6B"/>
+    
+    <!-- Play button -->
+    <polygon points="18,15 18,25 26,20" fill="#FF6B6B"/>
+  </g>
+  
+  <!-- FilmBase Text with curvy style -->
+  <text x="65" y="50" font-family="'Brush Script MT', 'Segoe Script', 'Comic Sans MS', cursive" font-size="42" font-weight="bold" fill="#000">
+    Film
+  </text>
+  <text x="155" y="50" font-family="'Brush Script MT', 'Segoe Script', 'Comic Sans MS', cursive" font-size="42" font-weight="bold" fill="#FF6B6B">
+    Base
+  </text>
+  
+  <!-- Decorative underline -->
+  <path d="M 65 55 Q 150 58, 235 55" stroke="#FF6B6B" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

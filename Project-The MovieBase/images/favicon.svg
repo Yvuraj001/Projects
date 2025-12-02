@@ -1,0 +1,39 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#1a1a1a"/>
+  
+  <!-- Film strip base -->
+  <rect x="12" y="16" width="40" height="32" rx="3" fill="#FF6B6B"/>
+  
+  <!-- Inner screen -->
+  <rect x="15" y="19" width="34" height="26" fill="#2a2a2a"/>
+  
+  <!-- Film holes - left side -->
+  <circle cx="17" cy="22" r="1.5" fill="#FF6B6B"/>
+  <circle cx="17" cy="32" r="1.5" fill="#FF6B6B"/>
+  <circle cx="17" cy="42" r="1.5" fill="#FF6B6B"/>
+  
+  <!-- Film holes - right side -->
+  <circle cx="47" cy="22" r="1.5" fill="#FF6B6B"/>
+  <circle cx="47" cy="32" r="1.5" fill="#FF6B6B"/>
+  <circle cx="47" cy="42" r="1.5" fill="#FF6B6B"/>
+  
+  <!-- Play button -->
+  <polygon points="28,26 28,38 38,32" fill="#FF6B6B"/>
+  
+  <!-- Letter "F" overlay (stylized) -->
+  <path d="M 24 28 L 24 36 M 24 28 L 30 28 M 24 32 L 28 32" 
+        stroke="#FFD700" 
+        stroke-width="2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none"/>
+  
+  <!-- Letter "B" overlay (stylized) -->
+  <path d="M 35 28 L 35 36 M 35 28 C 35 28 39 28 39 30.5 C 39 33 35 32 35 32 M 35 32 C 35 32 40 32 40 34.5 C 40 37 35 36 35 36" 
+        stroke="#FFD700" 
+        stroke-width="2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none"/>
+</svg>

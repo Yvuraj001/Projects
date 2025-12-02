@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBase - Info Of Your Favourite Movies</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utlities.css">
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg">
+</head>
+
+<body>
+    <div class="papa">
+
+        <nav>
+
+            <div class="searchbar">
+                <div class="head-title indie"><img src="./images/logo.svg" alt=""></div>
+                <div class="cont">
+
+
+
+                    <div class="dropdown">
+                        <button class="dropdown-btn">Movies ▼</button>
+                        <div class="dropdown-content">
+                            <a href="#popular">Popular</a>
+                            <a href="#toprated">Top Rated</a>
+                            <a href="#upcoming" data-category="upcoming">Upcoming</a>
+                            <a href="#nowplaying" data-category="now-playing">Now Playing</a>
+                        </div>
+                    </div>
+
+                    <!-- TV Shows Dropdown -->
+                    <div class="dropdown">
+                        <button class="dropdown-btn">TV Shows ▼</button>
+                        <div class="dropdown-content">
+                            <a href="#onair">On Air</a>
+                            <a href="#populartv" data-category="popular-tv">Popular</a>
+                            <a href="#topratedtv" data-category="top-rated-tv">Top Rated</a>
+                            <a href="#weeklytrending">Trending</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+                <!-- Secondry container  -->
+                 <div class="cont2">
+    <div class="dropdown">
+        <button class="dropdown-btn">Options ▼</button>
+        <div class="dropdown-content">
+            <!-- Movies Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header">Movies</div>
+                <a href="#popular">Popular</a>
+                <a href="#toprated">Top Rated</a>
+                <a href="#weeklytrending">Trending</a>
+                <a href="#upcoming">Upcoming</a>
+                <a href="#nowplaying">Now Playing</a>
+            </div>
+            
+            <!-- Divider -->
+            <div class="dropdown-divider"></div>
+            
+            <!-- TV Shows Section -->
+            <div class="dropdown-section">
+                <div class="dropdown-header">Series</div>
+                <a href="#populartv">Popular</a>
+                <a href="#topratedtv">Top Rated</a>
+                <a href="#trendintv">Trending</a>
+                <a href="#onair">On Air</a>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="input__container">
+
+                    <input type="text" class="input__search" placeholder="Search movies..." id="searchInput">
+                    <button class="input__button__shadow" id="searchBtn1">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div>
+
+
+
+            </div>
+            <div class="srcico">
+                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </div>
+
+        </nav>
+
+
+
+        <div class="smallsearch"><div class="input__container2">
+
+                    <input type="text" class="input__search2" placeholder="Search movies..." id="searchInput2">
+                    <button class="input__button__shadow" id="searchBtn1">
+                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                </div></div>
+
+
+
+
+        <div class="loading-overlay2" id="loadingOverlay">
+              <div class="loader"></div>
+            <!-- <div class="text" id="text"><img src="./images/cat Mark loading (1).gif" alt="" style=" height: 40vh;"></div> -->
+        </div>
+        <img style="width: 100%; height: 18px;" src="./images/line.svg" alt="">
+        <div class="container" id="main">
+
+            <div class="uphead pmovies">
+
+                <div class="head-u"> <img src="./images/pop.svg" alt="">Trending Movies</div>
+                <div id="faltu"><a href="/details.html">View all</a></div>
+            </div>
+            <div id="popular" class="global-st">
+
+                <div class="navbuttons">
+                    <button class="previous"> <img src="./images/previous1.svg" alt=""></button>
+
+                    <button class="next"> <img src="./images/next.svg" alt=""></button>
+                </div>
+
+                <div class="items" id="popularitems">
+                    <!-- done -->
+                </div>
+
+            </div>
+
+            <img style="width: 100%; height: 18px;" src="./images/line.svg" alt="">
+
+            <div class="uphead cmovies">
+
+
+                <div class="head-u"><img src="./images/high.svg" alt="">Highest Rated</div>
+                <div id="faltu"><a href="/details.html">View all</a></div>
+            </div>
+            <div id="toprated" class="global-st">
+                <div class="navbuttons">
+                    <button class="previous"> <img src="./images/previous1.svg" alt=""></button>
+
+                    <button class="next"> <img src="./images/next.svg" alt=""></button>
+                </div>
+                <div class="items" id="toprateditems">
+                    <!-- done -->
+                </div>
+
+            </div>
+
+            <img style="width: 100%; height: 18px;" src="./images/line.svg" alt="">
+
+            <div class="uphead cmovies">
+
+                <div class="head-u"> <img src="./images/weekly.svg" alt="">Weekly Trending</div>
+                <div id="faltu"><a href="/details.html">View all</a></div>
+            </div>
+            <div id="weeklytrending" class="global-st">
+                <div class="navbuttons">
+                    <button class="previous"> <img src="./images/previous1.svg" alt=""></button>
+
+                    <button class="next"> <img src="./images/next.svg" alt=""></button>
+                </div>
+                <div class="items" id="weeklytrendingitems">
+                    <!-- done -->
+                </div>
+
+            </div>
+
+            <img style="width: 100%; height: 18px;" src="./images/line.svg" alt="">
+
+            <div class="uphead cmovies">
+
+                <div class="head-u"> <img src="./images/onair.svg" alt="">Series on Air</div>
+                <div id="faltu"><a href="/details.html">View all</a></div>
+            </div>
+            <div id="onair" class="global-st">
+                <div class="navbuttons">
+                    <button class="previous"> <img src="./images/previous1.svg" alt=""></button>
+
+                    <button class="next"> <img src="./images/next.svg" alt=""></button>
+                </div>
+                <div class="items" id="onairitems">
+                    <!-- done -->
+                </div>
+
+            </div>
+
+            <img style="width: 100%; height: 18px;" src="./images/line.svg" alt="">
+
+            <div class="uphead cmovies">
+
+
+                <div class="head-u"> <img src="./images/upcoming.svg" alt="">Upcoming Movies</div>
+                <div id="faltu"><a href="/details.html">View all</a></div>
+            </div>
+            <div id="upcoming" class="global-st">
+                <div class="navbuttons">
+                    <button class="previous"> <img src="./images/previous1.svg" alt=""></button>
+
+                    <button class="next"> <img src="./images/next.svg" alt=""></button>
+                </div>
+                <div class="items" id="upcomingitems">
+                    <!-- done -->
+                </div>
+
+            </div>
+            <img style="width: 100%; height: 18px;" src="./images/line.svg" alt="">
+            <div class="uphead cmovies">
+
+                <div class="head-u "> <img src="./images/now.svg" alt="">Now Playing</div>
+                <div id="faltu"><a href="/details.html">View all</a></div>
+            </div>
+            <div id="nowplaying" class="global-st">
+                <div class="navbuttons">
+                    <button class="previous"> <img src="./images/previous1.svg" alt=""></button>
+
+                    <button class="next"> <img src="./images/next.svg" alt=""></button>
+                </div>
+                <div class="items" id="nowplayingitems">
+                    <!-- done -->
+                </div>
+
+            </div>
+
+
+            <img style="width: 100%; height: 18px;" src="./images/line.svg" alt="">
+
+
+
+
+            <div class="uphead cmovies">
+
+                <div class="head-u"><img src="./images/poptv.svg" alt="">Popular TV Shows</div>
+                <div id="faltu"><a href="/details.html">View all</a></div>
+            </div>
+            <div id="populartv" class="global-st">
+                <div class="navbuttons">
+                    <button class="previous"> <img src="./images/previous1.svg" alt=""></button>
+                    <button class="next"> <img src="./images/next.svg" alt=""></button>
+                </div>
+                <div class="items" id="populartvitems">
+                    <!-- done -->
+                </div>
+            </div>
+
+            <img style="width: 100%; height: 18px;" src="./images/line.svg" alt="">
+
+            <!-- Top Rated TV Shows -->
+            <div class="uphead cmovies">
+
+                <div class="head-u"> <img src="./images/top.svg" alt="">Top Rated Shows</div>
+                <div id="faltu"><a href="/details.html">View all</a></div>
+            </div>
+            <div id="topratedtv" class="global-st">
+                <div class="navbuttons">
+                    <button class="previous"> <img src="./images/previous1.svg" alt=""></button>
+                    <button class="next"> <img src="./images/next.svg" alt=""></button>
+                </div>
+                <div class="items" id="topratedtvitems">
+                    <!-- done -->
+                </div>
+            </div>
+
+            <img style="width: 100%; height: 18px;" src="./images/line.svg" alt="">
+
+            <!-- Trending TV Shows -->
+            <div class="uphead cmovies">
+
+                <div class="head-u"> <img src="./images/tdtv.svg" alt="">Trending TV Shows</div>
+                <div id="faltu"><a href="/details.html">View all</a></div>
+            </div>
+            <div id="trendintv" class="global-st">
+                <div class="navbuttons">
+                    <button class="previous"> <img src="./images/previous1.svg" alt=""></button>
+                    <button class="next"> <img src="./images/next.svg" alt=""></button>
+                </div>
+                <div class="items" id="trendintvitems">
+                    <!-- done -->
+                </div>
+            </div>
+
+            <img style="width: 100%; height: 18px;" src="./images/line.svg" alt="">
+
+
+
+
+
+
+
+
+
+
+
+
+        </div> <!--  constailer -->
+
+    </div>
+
+    </div>
+
+
+
+    </div>
+
+
+    </div>
+    </div>
+    <script src="index.js"></script>
+    <script type="module" src="click.js"></script>
+    <script type="module" src="functions.js"></script>
+
+
+
+
+</body>
+
+</html>
