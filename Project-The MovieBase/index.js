@@ -324,44 +324,8 @@ const mainfunc = async () => {
         if (error.name === 'AbortError') {
             displaymessage = "<div style=\"color: red\">⏱️ Connection timeout! Server is not responding. Please try again or use VPN.</div> <i >  Alternate you can you another network DNS.</i>";
         }
-        document.body.innerHTML = ` 
-        <nav class="errorloading">
-
-            <div class="searchbar">
-                <div class="head-title"><img src="logo.svg" alt=""></div>
-                <div class="cont">
-                    <div class="dropdown">
-                        <button class="dropdown-btn">Movies ▼</button>
-                        <div class="dropdown-content">
-                            <a href="#popular">Popular</a>
-                            <a href="#toprated">Top Rated</a>
-                            <a href="#upcoming" data-category="upcoming">Upcoming</a>
-                            <a href="#nowplaying" data-category="now-playing">Now Playing</a>
-                        </div>
-                    </div>
-
-                    <!-- TV Shows Dropdown -->
-                    <div class="dropdown">
-                        <button class="dropdown-btn">TV Shows ▼</button>
-                        <div class="dropdown-content">
-                            <a href="#onair">On Air</a>
-                            <a href="#" data-category="popular-tv">Popular</a>
-                            <a href="#" data-category="top-rated-tv">Top Rated</a>
-                            <a href="#weeklytrendingi">Trending</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="input__container">
-
-                    <input type="text" class="input__search" placeholder="Search movies..." id="searchInput">
-                    <button class="input__button__shadow" id="searchBtn1">
-                        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                    </button>
-                </div>
- 
+        document.querySelector(".container").innerHTML = ` 
+       
         <div class="errorcontainer" style="
             display: flex;
             justify-content: center;
@@ -612,4 +576,5 @@ window.addEventListener("load", () => {
 document.querySelector(".srcico").addEventListener("click", () => {
     document.querySelector(".smallsearch").style.display = "block"
     document.querySelector(".srcico").style.display = "none"
+
 })
