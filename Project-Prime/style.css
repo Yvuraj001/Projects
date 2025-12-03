@@ -265,7 +265,7 @@ nav {
 
 main .section-1 {
    display: flex;
-   background-image: url(/Assets/MLP.jpg);
+   background-image: url(./Assets/MLP.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -335,7 +335,7 @@ main .section-1 {
 
 .section-2 {
    display: flex;
-   background-image: url(/Assets/TVOD_MLP_Right.jpg);
+   background-image: url(./Assets/TVOD_MLP_Right.jpg);
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -855,7 +855,7 @@ footer img{
    }
  main .section-1{
    background: #008cff;
-   background-image: url(Assets/TVOD_MLP_Right.jpg) ;
+   background-image: url(./Assets/TVOD_MLP_Right.jpg) ;
     
    background-position: center;
    object-fit: cover;
