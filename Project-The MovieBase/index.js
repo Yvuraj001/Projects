@@ -520,7 +520,7 @@ if (document.querySelector("#faltu")) {
 
 
             // Navigate to details page
-            window.location.href = '/details.html';
+            window.location.href = './details.html';
         })
     })
 }
@@ -538,7 +538,7 @@ document.addEventListener('DOMContentLoaded', () => {
         searchButtons.forEach(btn => {
             btn.addEventListener("click", () => {
                 const query = btn.closest('.searchbar, .smallsearch').querySelector('#searchInput , #searchInput2').value;
-                window.location.href = `/search.html?q=${encodeURIComponent(query)}`;
+                window.location.href = `./search.html?q=${encodeURIComponent(query)}`;
             });
         });
 
@@ -548,7 +548,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (event.key === "Enter") {
                     event.preventDefault();
                     const query = this.value;
-                    window.location.href = `/search.html?q=${encodeURIComponent(query)}`;
+                    window.location.href = `./search.html?q=${encodeURIComponent(query)}`;
                 }
             });
         });
@@ -578,3 +578,4 @@ document.querySelector(".srcico").addEventListener("click", () => {
     document.querySelector(".srcico").style.display = "none"
 
 })
+
