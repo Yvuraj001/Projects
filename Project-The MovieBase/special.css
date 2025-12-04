@@ -7,7 +7,9 @@ body {
 .head-title {
     color: #cdc4ff;
 }
-
+ [data-type="person"]{
+    display: none;
+ }
 .cast-info {
     overflow: hidden;
     position: relative;
@@ -146,4 +148,5 @@ body {
     justify-content: space-around;  
     align-items: center;
     gap: 32vw;
+
 }
