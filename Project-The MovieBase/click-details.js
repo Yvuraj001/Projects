@@ -137,16 +137,16 @@ const loadData = async () => {
                
             </div> <div class="trailer">${trailersHTML}</div>`
         }
-        localStorage.setItem("data", ihtml)
+       
       
         clickmoviedetails.innerHTML += ihtml
         await tagchk()
         
     } catch (err) {
         console.error('Error loading movie details', err) 
-            clickmoviedetails.innerHTML = localStorage.getItem("data")
-        // const el = document.getElementById('clickmoviedetails')
-        // if (el) el.innerHTML = '<div class="error">Failed to load details.Chekc your connection or  try again later.</div>'
+         
+         const el = document.getElementById('clickmoviedetails')
+         if (el) el.innerHTML = '<div class="error">Failed to load details.Chekc your connection or  try again later.</div>'
     } finally {
         hideLoader()
     }
@@ -197,7 +197,7 @@ searchBtn1.addEventListener("click", () => {
 
 
     const query = document.getElementById('searchInput').value;
-    window.location.href = `/search.html?q=${encodeURIComponent(query)}`;
+    window.location.href = `./search.html?q=${encodeURIComponent(query)}`;
 
 })
 
@@ -205,7 +205,7 @@ document.getElementById("searchInput").addEventListener("keypress", function (ev
     if (event.key === "Enter") {
         event.preventDefault();
         const query = document.getElementById('searchInput').value;
-        window.location.href = `/search.html?q=${encodeURIComponent(query)}`;
+        window.location.href = `./search.html?q=${encodeURIComponent(query)}`;
     }
 });
 
@@ -217,4 +217,5 @@ document.querySelector(".head-title").addEventListener("click", () => {
 })
 
 //  <span class="genre-tag">${data.genres[1].name || 'e'}</span>
+
 //                    <span class="genre-tag">${data.genres[2].name || 'e'}</span>
