@@ -124,7 +124,7 @@ document.getElementById("searchInput").addEventListener("keypress", function (ev
 
 
 document.getElementById("home").addEventListener("click", (e) => {
-    window.location.href = '/index.html';
+    window.location.href = './index.html';
 })
 
 

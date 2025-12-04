@@ -142,23 +142,23 @@ details()
 // Navigate to the search page
 searchBtn1.addEventListener("click", ()=>{
     const query = document.getElementById('searchInput').value;
-   window.location.href = `/search.html?q=${encodeURIComponent(query)}`;
+   window.location.href = `./search.html?q=${encodeURIComponent(query)}`;
 })
 
 srcico.addEventListener("click", ()=>{
-     window.location.href = `/search.html`;
+     window.location.href = `./search.html`;
 })
 // Enter key press
 document.getElementById("searchInput").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         event.preventDefault();  
        const query = document.getElementById('searchInput').value;
-   window.location.href = `/search.html?q=${encodeURIComponent(query)}`;
+   window.location.href = `./search.html?q=${encodeURIComponent(query)}`;
     }
 });
 
 document.querySelector(".srcico2").addEventListener("click",()=>{
-      window.location.href = `/search.html`;
+      window.location.href = `./search.html`;
 })
  
  
