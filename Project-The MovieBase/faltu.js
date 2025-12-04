@@ -141,18 +141,19 @@ details()
 
 // Navigate to the search page
 searchBtn1.addEventListener("click", ()=>{
-    const query = document.getElementById('searchInput').value;
+    const query = document.getElementById('searchInput2').value;
    window.location.href = `./search.html?q=${encodeURIComponent(query)}`;
 })
 
 srcico.addEventListener("click", ()=>{
      window.location.href = `./search.html`;
 })
+
 // Enter key press
-document.getElementById("searchInput").addEventListener("keypress", function(event) {
+document.getElementById("searchInput2").addEventListener("keypress", function(event) {
     if (event.key === "Enter") {
         event.preventDefault();  
-       const query = document.getElementById('searchInput').value;
+       const query = document.getElementById('searchInput2').value;
    window.location.href = `./search.html?q=${encodeURIComponent(query)}`;
     }
 });
@@ -161,27 +162,7 @@ document.querySelector(".srcico2").addEventListener("click",()=>{
       window.location.href = `./search.html`;
 })
  
- 
 
-
-// styles for the buttons 
-
-// if(currentpage <= 1){
-//                      prev.style.background = "red"
-//                      prev.style.cursor = "not-allowed"
-                     
-//                 }
-//                 else if(currentpage > 1){
-//                     prev.style.background = "black"
-//                 }
-
- 
-
-
-// things to do 
-// check if the load listner is workning
-  
-// flatu ka code hatau
  
  
  
