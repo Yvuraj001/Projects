@@ -1,0 +1,659 @@
+/* Mobile Responsive Styles for Details Page */
+
+/* Tablets and smaller laptops */
+@media (max-width: 1024px) {
+    #mvcards {
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    .movie-card, .theater, .coming {
+        width: calc(50% - 15px);
+        min-width: 240px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    #Heading {
+        font-size: 32px;
+        margin-left: 20px;
+    }
+    
+    #mvcards {
+        gap: 15px;
+        margin: 10px;
+        justify-content: center;
+    }
+    
+    .movie-card, .theater, .coming {
+        width: calc(50% - 10px);
+        min-width: 160px;
+        height: auto;
+        padding: 12px;
+    }
+    
+    .movie-card > div:first-child,
+    .theater > div:first-child,
+    .coming > div:first-child {
+        height: 280px;
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .u-card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+    
+    .title {
+        font-size: 14px;
+    }
+    
+    .pagenav {
+        margin-bottom: 20px;
+    }
+    
+    .pagenav button {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 568px) {
+    .container {
+        min-height: 100px;
+    }
+    
+    #Heading {
+        font-size: 26px;
+        margin-left: 15px;
+        text-align: center;
+    }
+    
+    .headcont {
+        padding: 10px 0;
+    }
+    
+    #mvcards {
+        gap: 12px;
+        margin: 8px;
+        min-height: 60vh;
+        justify-content: center;
+        padding: 5px;
+    }
+    
+    /* 2 cards per row on mobile - FIXED */
+    .movie-card, .theater, .coming {
+        width: calc(50% - 8px);
+        min-width: 140px;
+        max-width: 180px;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    /* Image container - CRITICAL FIX */
+    .movie-card > div:first-child,
+    .theater > div:first-child,
+    .coming > div:first-child {
+        height: 240px !important;
+        width: 100% !important;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    /* Ensure image fills container properly */
+    .u-card-img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center !important;
+        display: block !important;
+        border-radius: 10px;
+    }
+    
+    .movie-card-content {
+        padding: 8px 4px;
+    }
+    
+    .title {
+        font-size: 13px;
+        line-height: 1.2;
+        margin-top: 6px;
+        min-height: auto;
+    }
+    
+    .movie-genres {
+        margin-top: 6px;
+        gap: 3px;
+        max-height: 40px;
+    }
+    
+    .genre-tag {
+        padding: 2px 8px;
+        font-size: 10px;
+    }
+    
+    .movie-release {
+        font-size: 11px;
+        margin-top: 8px;
+    }
+    
+    .rating-badge {
+        top: 8px;
+        right: 8px;
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+    
+    .view-details-btn {
+        width: 40px;
+        height: 40px;
+        bottom: 60px;
+        right: 10px;
+    }
+    
+    .view-details-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    /* Navigation buttons */
+    .pagenav {
+        margin-bottom: 15px;
+        gap: 15px;
+    }
+    
+    .pagenav button {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .pagenav button img {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 400px) {
+    #Heading {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+    
+    #mvcards {
+        gap: 10px;
+        margin: 5px;
+        padding: 3px;
+    }
+    
+    .movie-card, .theater, .coming {
+        width: calc(50% - 6px);
+        min-width: 135px;
+        max-width: 165px;
+        padding: 8px;
+    }
+    
+    .movie-card > div:first-child,
+    .theater > div:first-child,
+    .coming > div:first-child {
+        height: 220px !important;
+        width: 100% !important;
+    }
+    
+    .u-card-img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    
+    .title {
+        font-size: 12px;
+    }
+    
+    .genre-tag {
+        padding: 2px 6px;
+        font-size: 9px;
+    }
+    
+    .movie-release {
+        font-size: 10px;
+    }
+    
+    .rating-badge {
+        padding: 4px 8px;
+        font-size: 10px;
+    }
+    
+    .pagenav button {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    #mvcards {
+        gap: 8px;
+        margin: 4px;
+    }
+    
+    .movie-card, .theater, .coming {
+        width: calc(50% - 5px);
+        min-width: 125px;
+        max-width: 155px;
+        padding: 6px;
+    }
+    
+    .movie-card > div:first-child,
+    .theater > div:first-child,
+    .coming > div:first-child {
+        height: 200px !important;
+        width: 100% !important;
+    }
+    
+    .u-card-img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    
+    .title {
+        font-size: 11px;
+    }
+    
+    .view-details-btn {
+        width: 35px;
+        height: 35px;
+        bottom: 55px;
+    }
+    
+    .view-details-btn svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* ============================================
+   SEARCH PAGE RESPONSIVE STYLES
+   ============================================ */
+
+/* Tablets and smaller laptops - Search Page */
+@media (max-width: 1024px) {
+    .searchbar2 {
+        padding: 15px;
+    }
+    
+    .searchbar2 .input__container2 {
+        max-width: 85vw;
+    }
+    
+    #searchdata {
+        gap: 20px;
+        padding: 10px;
+        margin-top: 50px;
+    }
+    
+    #searchdata .movie-card,
+    #searchdata .theater,
+    #searchdata .coming {
+        width: calc(50% - 15px);
+        min-width: 240px;
+    }
+}
+
+/* Tablets - Search Page */
+@media (max-width: 768px) {
+    .head-cont {
+        padding: 15px 0;
+    }
+    
+    .he2 img {
+        width: 250px !important;
+    }
+    
+    .search-title {
+        font-size: 32px !important;
+    }
+    
+    .searchbar2 {
+        padding: 10px;
+    }
+    
+    .searchbar2 .input__container2 {
+        max-width: 90vw;
+        padding: 12px 18px;
+    }
+    
+    .searchbar2 .input__search {
+        padding: 11px;
+        font-size: 14px;
+    }
+    
+    #searchdata {
+        gap: 15px;
+        margin-top: 40px;
+        padding: 10px;
+    }
+    
+    #searchdata .movie-card,
+    #searchdata .theater,
+    #searchdata .coming {
+        width: calc(50% - 10px);
+        min-width: 160px;
+        height: auto;
+        padding: 12px;
+    }
+    
+    #searchdata .movie-card > div:first-child,
+    #searchdata .theater > div:first-child,
+    #searchdata .coming > div:first-child {
+        height: 280px;
+        width: 100%;
+    }
+    
+    #searchdata .u-card-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    #searchdata .title {
+        font-size: 14px;
+    }
+    
+    .searchnav.pagenav {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile devices - Search Page */
+@media (max-width: 568px) {
+    .head-cont {
+        padding: 10px 0;
+        justify-content: center;
+    }
+    
+    .he2 img {
+        width: 220px !important;
+    }
+    
+    .search-title {
+        font-size: 28px !important;
+        top: -50px;
+    }
+    
+    .searchbar2 {
+        padding: 8px;
+        margin-top: 10px;
+    }
+    
+    .searchbar2 .input__container2 {
+        max-width: 92vw;
+        padding: 10px 15px;
+        gap: 5px;
+    }
+    
+    .searchbar2 .input__search {
+        width: 75vw;
+        padding: 10px;
+        font-size: 13px;
+        height: 45px;
+    }
+    
+    .searchbar2 .input__button__shadow {
+        padding: 3px;
+    }
+    
+    .searchbar2 .search-icon {
+        width: 25px;
+        height: 25px;
+    }
+    
+    #searchdata {
+        gap: 12px;
+        margin-top: 30px;
+        padding: 8px;
+        justify-content: center;
+    }
+    
+    /* 2 cards per row for search results */
+    #searchdata .movie-card,
+    #searchdata .theater,
+    #searchdata .coming {
+        width: calc(50% - 8px);
+        min-width: 140px;
+        max-width: 180px;
+        height: auto;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    
+    #searchdata .movie-card > div:first-child,
+    #searchdata .theater > div:first-child,
+    #searchdata .coming > div:first-child {
+        height: 240px !important;
+        width: 100% !important;
+        margin: 0 auto;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    
+    #searchdata .u-card-img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        object-position: center !important;
+        display: block !important;
+        border-radius: 10px;
+    }
+    
+    #searchdata .movie-card-content {
+        padding: 8px 4px;
+    }
+    
+    #searchdata .title {
+        font-size: 13px;
+        line-height: 1.2;
+        padding: 6px;
+    }
+    
+    #searchdata .movie-genres {
+        margin-top: 6px;
+        gap: 3px;
+    }
+    
+    #searchdata .genre-tag {
+        padding: 2px 8px;
+        font-size: 10px;
+    }
+    
+    #searchdata .movie-release {
+        font-size: 11px;
+    }
+    
+    #searchdata .rating-badge {
+        top: 8px;
+        right: 8px;
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+    
+    #searchdata .view-details-btn {
+        width: 40px;
+        height: 40px;
+        bottom: 60px;
+        right: 10px;
+    }
+    
+    #searchdata .view-details-btn svg {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .searchnav.pagenav {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        gap: 15px;
+    }
+    
+    .searchnav.pagenav button {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .searchnav.pagenav button svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Small mobile devices - Search Page */
+@media (max-width: 400px) {
+    .he2 img {
+        width: 200px !important;
+    }
+    
+    .search-title {
+        font-size: 24px !important;
+    }
+    
+    .searchbar2 .input__container2 {
+        padding: 8px 12px;
+    }
+    
+    .searchbar2 .input__search {
+        width: 70vw;
+        padding: 8px;
+        font-size: 12px;
+        height: 42px;
+    }
+    
+    #searchdata {
+        gap: 10px;
+        margin-top: 25px;
+        padding: 5px;
+    }
+    
+    #searchdata .movie-card,
+    #searchdata .theater,
+    #searchdata .coming {
+        width: calc(50% - 6px);
+        min-width: 135px;
+        max-width: 165px;
+        padding: 8px;
+    }
+    
+    #searchdata .movie-card > div:first-child,
+    #searchdata .theater > div:first-child,
+    #searchdata .coming > div:first-child {
+        height: 220px !important;
+        width: 100% !important;
+    }
+    
+    #searchdata .u-card-img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    
+    #searchdata .title {
+        font-size: 12px;
+    }
+    
+    #searchdata .genre-tag {
+        padding: 2px 6px;
+        font-size: 9px;
+    }
+    
+    .searchnav.pagenav button {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Extra small devices - Search Page */
+@media (max-width: 360px) {
+    .he2 img {
+        width: 180px !important;
+    }
+    
+    .search-title {
+        font-size: 22px !important;
+    }
+    
+    .searchbar2 .input__container2 {
+        padding: 6px 10px;
+    }
+    
+    .searchbar2 .input__search {
+        width: 68vw;
+        padding: 7px;
+        font-size: 11px;
+        height: 40px;
+    }
+    
+    .searchbar2 .search-icon {
+        width: 22px;
+        height: 22px;
+    }
+    
+    #searchdata {
+        gap: 8px;
+        margin-top: 20px;
+        padding: 4px;
+    }
+    
+    #searchdata .movie-card,
+    #searchdata .theater,
+    #searchdata .coming {
+        width: calc(50% - 5px);
+        min-width: 125px;
+        max-width: 155px;
+        padding: 6px;
+    }
+    
+    #searchdata .movie-card > div:first-child,
+    #searchdata .theater > div:first-child,
+    #searchdata .coming > div:first-child {
+        height: 200px !important;
+        width: 100% !important;
+    }
+    
+    #searchdata .u-card-img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    
+    #searchdata .title {
+        font-size: 11px;
+    }
+    
+    #searchdata .view-details-btn {
+        width: 35px;
+        height: 35px;
+        bottom: 55px;
+    }
+    
+    .searchnav.pagenav button {
+        width: 32px;
+        height: 32px;
+    }
+    
+    .searchnav.pagenav button svg {
+        width: 15px;
+        height: 15px;
+    }
+}
