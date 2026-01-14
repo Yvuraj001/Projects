@@ -35,7 +35,7 @@ const showme = () => {
     let content = document.createElement("div");
     content.innerHTML = `
         <h3>Hi! My name is Yuvraj </h3>
-        <p>I am a beginner Developer. This is my first Market Standard Project. Hope you enjoyed this! 🎬</p>
+        <p>Nice to see you here!</p>
         <p>If you find any issues or have suggestions, contact me at: <strong>geniusandsmart123@gmail.com</strong> </p>
         <button class="closebtn">Ok, thanks! ✨</button>
     `;
@@ -73,4 +73,5 @@ document.addEventListener('keydown', function(event) {
   
  
  
+
  
